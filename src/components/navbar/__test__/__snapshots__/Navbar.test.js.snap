@@ -1,0 +1,288 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the navbar data 1`] = `
+Array [
+  <div
+    className="sc-bdvvtL kunjHS"
+  >
+    <div
+      className="sc-gsDKAQ dbhNAq"
+    >
+      <div
+        className="sc-hKwDye kooAaB"
+      >
+        <svg
+          height="39"
+          width="28"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g
+            fill="none"
+            fill-rule="evenodd"
+          >
+            <path
+              d="M18.331 0l-.463.578v5.021l2.894-3.61L18.332 0zM12.73 6.99v13.88h3.128V3.087L12.73 6.989zm5.139 1.838v12.044h3.128V4.925l-3.128 3.902zM1.602 20.871h4.025l5.091-6.351V9.498L1.602 20.871zM17.87 33.737h3.128v-5.643H17.87v5.643zm-5.14 5.192h3.128V28.094H12.73V38.93zm5.139 0h7.82v-3.16h-7.82v3.16zm-10.277 0h3.128v-3.16H7.59v3.16z"
+              fill="#fff"
+            />
+            <path
+              d="M20.744 22.903l-2.533 3.16h10.11v-3.16z"
+              fill="#00E1C3"
+            />
+            <path
+              d="M.44 26.063h15.417v-3.16H.441z"
+              fill="#FADC00"
+            />
+          </g>
+        </svg>
+      </div>
+      <ul
+        className="sc-eCImPb hhDAZo"
+      >
+        <span>
+          <li
+            className="sc-jRQBWg heRusH"
+          >
+            Home
+          </li>
+        </span>
+        <a
+          className="sc-dkPtRN hGNbec"
+          href="/my4"
+          onClick={[Function]}
+        >
+          <li
+            className="sc-jRQBWg heRusH"
+          >
+            My4
+          </li>
+        </a>
+        <a
+          className="sc-dkPtRN hGNbec"
+          href="/live_tv"
+          onClick={[Function]}
+        >
+          <li
+            className="sc-jRQBWg heRusH"
+          >
+            Live TV
+          </li>
+        </a>
+        <a
+          className="sc-dkPtRN hGNbec"
+          href="/"
+          onClick={[Function]}
+        >
+          <li
+            className="sc-jRQBWg heRusH"
+          >
+            Categories
+          </li>
+        </a>
+        <a
+          className="sc-dkPtRN hGNbec"
+          href="/box_sets"
+          onClick={[Function]}
+        >
+          <li
+            className="sc-jRQBWg heRusH"
+          >
+            Box Sets
+          </li>
+        </a>
+      </ul>
+      <div
+        className="sc-gKclnd jLKZVO"
+      >
+        <li
+          className="sc-iCfMLu eXaWgP"
+        >
+          <div
+            className="sc-pVTFL jLPQNk"
+          >
+            <svg
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              strokeWidth="0"
+              style={
+                Object {
+                  "color": undefined,
+                  "height": "22px",
+                  "width": "22px",
+                }
+              }
+              viewBox="0 0 1024 1024"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M858.5 763.6a374 374 0 0 0-80.6-119.5 375.63 375.63 0 0 0-119.5-80.6c-.4-.2-.8-.3-1.2-.5C719.5 518 760 444.7 760 362c0-137-111-248-248-248S264 225 264 362c0 82.7 40.5 156 102.8 201.1-.4.2-.8.3-1.2.5-44.8 18.9-85 46-119.5 80.6a375.63 375.63 0 0 0-80.6 119.5A371.7 371.7 0 0 0 136 901.8a8 8 0 0 0 8 8.2h60c4.4 0 7.9-3.5 8-7.8 2-77.2 33-149.5 87.8-204.3 56.7-56.7 132-87.9 212.2-87.9s155.5 31.2 212.2 87.9C779 752.7 810 825 812 902.2c.1 4.4 3.6 7.8 8 7.8h60a8 8 0 0 0 8-8.2c-1-47.8-10.9-94.3-29.5-138.2zM512 534c-45.9 0-89.1-17.9-121.6-50.4S340 407.9 340 362c0-45.9 17.9-89.1 50.4-121.6S466.1 190 512 190s89.1 17.9 121.6 50.4S684 316.1 684 362c0 45.9-17.9 89.1-50.4 121.6S557.9 534 512 534z"
+              />
+            </svg>
+            <div
+              className="sc-jrQzAO dMUSa-d"
+            >
+              My4
+            </div>
+          </div>
+        </li>
+        <li
+          className="sc-iCfMLu eXaWgP"
+        >
+          <div
+            className="sc-furwcr dJqDVz"
+          >
+            <svg
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              strokeWidth="0"
+              style={
+                Object {
+                  "color": undefined,
+                  "height": "22px",
+                  "width": "22px",
+                }
+              }
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M12 17c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm6-9h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6h1.9c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm0 12H6V10h12v10z"
+              />
+            </svg>
+          </div>
+          <span>
+            Parent Controls: 
+          </span>
+          <p>
+            Off
+          </p>
+          <div
+            className="sc-pVTFL jLPQNk"
+          >
+            <svg
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              strokeWidth="0"
+              style={
+                Object {
+                  "color": undefined,
+                  "height": "22px",
+                  "width": "22px",
+                }
+              }
+              viewBox="0 0 512 512"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M443.5 420.2L336.7 312.4c20.9-26.2 33.5-59.4 33.5-95.5 0-84.5-68.5-153-153.1-153S64 132.5 64 217s68.5 153 153.1 153c36.6 0 70.1-12.8 96.5-34.2l106.1 107.1c3.2 3.4 7.6 5.1 11.9 5.1 4.1 0 8.2-1.5 11.3-4.5 6.6-6.3 6.8-16.7.6-23.3zm-226.4-83.1c-32.1 0-62.3-12.5-85-35.2-22.7-22.7-35.2-52.9-35.2-84.9 0-32.1 12.5-62.3 35.2-84.9 22.7-22.7 52.9-35.2 85-35.2s62.3 12.5 85 35.2c22.7 22.7 35.2 52.9 35.2 84.9 0 32.1-12.5 62.3-35.2 84.9-22.7 22.7-52.9 35.2-85 35.2z"
+              />
+            </svg>
+            <div
+              className="sc-jrQzAO dMUSa-d"
+            >
+              Search
+            </div>
+          </div>
+        </li>
+        <li
+          className="sc-iCfMLu eXaWgP"
+        >
+          <div
+            className="sc-furwcr dJqDVz"
+          >
+            <svg
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              strokeWidth="0"
+              style={
+                Object {
+                  "color": undefined,
+                  "height": "22px",
+                  "width": "22px",
+                }
+              }
+              viewBox="0 0 512 512"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M443.5 420.2L336.7 312.4c20.9-26.2 33.5-59.4 33.5-95.5 0-84.5-68.5-153-153.1-153S64 132.5 64 217s68.5 153 153.1 153c36.6 0 70.1-12.8 96.5-34.2l106.1 107.1c3.2 3.4 7.6 5.1 11.9 5.1 4.1 0 8.2-1.5 11.3-4.5 6.6-6.3 6.8-16.7.6-23.3zm-226.4-83.1c-32.1 0-62.3-12.5-85-35.2-22.7-22.7-35.2-52.9-35.2-84.9 0-32.1 12.5-62.3 35.2-84.9 22.7-22.7 52.9-35.2 85-35.2s62.3 12.5 85 35.2c22.7 22.7 35.2 52.9 35.2 84.9 0 32.1-12.5 62.3-35.2 84.9-22.7 22.7-52.9 35.2-85 35.2z"
+              />
+            </svg>
+          </div>
+          <span>
+            Search
+          </span>
+          <div
+            className="sc-pVTFL jLPQNk"
+          >
+            <svg
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              strokeWidth="0"
+              style={
+                Object {
+                  "color": undefined,
+                  "height": "22px",
+                  "width": "22px",
+                }
+              }
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
+              />
+            </svg>
+            <div
+              className="sc-jrQzAO dMUSa-d"
+            >
+              Menu
+            </div>
+          </div>
+        </li>
+      </div>
+    </div>
+  </div>,
+  <div
+    className="sc-kDTinF uIvzE"
+  >
+    <div
+      className="sc-iqseJM hPXsoB"
+    >
+      My4
+    </div>
+    <div
+      className="sc-iqseJM hPXsoB"
+    >
+      Live TV
+    </div>
+    <div
+      className="sc-iqseJM hPXsoB"
+    >
+      Categories
+    </div>
+    <div
+      className="sc-iqseJM hPXsoB"
+    >
+      Box Sets
+    </div>
+  </div>,
+]
+`;
