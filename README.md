@@ -3,17 +3,17 @@
 
 ### `Run all4_clone` 
 
-* Cd into app
+* cd into app
 
 ```
 cd my-app
 ```
-* Install dependancies
+* install dependancies
 
 ```
 npm install
 ```
-* Run app
+* run app
 
 ```
 npm start
