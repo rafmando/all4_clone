@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
-    watchLaterlist:[]
+    watchLater:[]
 }
 
 const watchLaterSlice = createSlice({
@@ -9,7 +9,18 @@ const watchLaterSlice = createSlice({
     initialState,
     reducers: {
         addToWatchLater: (state,action) => {
-            state.watchLaterlist.push(action.payload)
+            const show = {
+                id: action.payload.id,
+                name: action.payload.name,
+                img: action.payload.img,
+                description: action.payload.description,
+            }
+
+            const quantity = action.payload.name.split
+            console.log(quantity)
+            state.watchLater.push(show)
+            
+            
         }
     }
 });

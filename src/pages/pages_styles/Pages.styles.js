@@ -14,7 +14,6 @@ const StyledPageHeading = styled.div`
     color: white;
     margin-top: 100px;
     
-
 `
 export default{
     StyledPageContainer,

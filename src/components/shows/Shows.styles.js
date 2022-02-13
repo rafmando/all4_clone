@@ -155,10 +155,28 @@ const StyledShowsCard = styled.div`
     margin-bottom: 20px;
     img {
         width: 100%;
+        position: relative;
     }
     @media (max-width:810px) {
         width: 49%;
     }
+   
+    
+`
+const StyledShowsCardOverlay = styled.div`
+    position: relative;
+    z-index:2;
+    width: 100%;
+    &:hover {
+        background-color: black;
+        
+    }
+     
+`
+const StyledShowsCardOverlayText = styled.div`
+    color: white;
+    
+    
 `
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
@@ -175,4 +193,6 @@ export default {
     StyledShowsMoreBox,
     StyledShows,
     StyledShowsCard,
+    StyledShowsCardOverlay,
+    StyledShowsCardOverlayText,
 }

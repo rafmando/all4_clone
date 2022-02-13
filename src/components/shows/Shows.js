@@ -20,13 +20,14 @@ const {
     StyledShowsMoreBox,
     StyledShows,
     StyledShowsCard,
+    StyledShowsCardOverlay,
+    StyledShowsCardOverlayText,
 } = ShowsStyles
 
 const Shows = () => {
     
     const [showsTotal,setShowsTotal] = useState([])
     const [shows,setShows] = useState(showsData)
-    const [testList,setTestList] = useState([])
     const dispatch = useDispatch()
     
     useEffect(() => {
@@ -87,7 +88,9 @@ const Shows = () => {
                     {shows.map((show)=> {
                         return (
                             <StyledShowsCard onClick={() => handleToWatchLater(show)} key={show.id}>
-                                <img src={show.img} alt="show"/>
+                                <StyledShowsCardOverlay>
+                                    <img src={show.img} alt="show"/>
+                                </StyledShowsCardOverlay>
                                 <p>{show.name}</p>
                             </StyledShowsCard>
                         )
