@@ -21,7 +21,6 @@ const {
     StyledShows,
     StyledShowsCard,
     StyledShowsCardOverlay,
-    StyledShowsCardOverlayText,
 } = ShowsStyles
 
 const Shows = () => {
@@ -29,26 +28,15 @@ const Shows = () => {
     const [showsTotal,setShowsTotal] = useState([])
     const [shows,setShows] = useState(showsData)
     const dispatch = useDispatch()
+   
+
     
     useEffect(() => {
         updateShowTotal()
+        
     });
 
-    const genres = [
-        {id:1,genre:'Comedy'},
-        {id:2,genre:'Documentries'},
-        {id:3,genre:'Drama'},
-        {id:4,genre:'Entertainment'},
-        {id:5,genre:'Film'},
-        {id:6,genre:'Lifestyle'},
-        {id:7,genre:'News & Current Affairs'},
-        {id:8,genre:'Sports'},
-        {id:9,genre:'World Drama'},
-        {id:10,genre:'On Tv: Yesterday'},
-        {id:11,genre:'On Tv: Last 7 Days'},
-        {id:12,genre:'Box Sets'},
-    ]
-
+    
     const handleToWatchLater = (show) => {
         dispatch(addToWatchLater(show))
     }
@@ -56,6 +44,19 @@ const Shows = () => {
     const updateShowTotal = () => {
         setShowsTotal(shows.length)
     }
+
+    const filterGenre = (show) => {
+        
+        const filterResult = showsData.filter((showData) => {
+            return showData.category === show;
+        })
+        setShows(filterResult)
+        
+       
+    }
+
+
+   
     
     return (
         <StyledShowsContainer>
@@ -73,13 +74,17 @@ const Shows = () => {
                     </StyledShowsRefine>
                 </StyledShowsHeader>
                 <StyledShowsGenresWrapper>
-                    {genres.map((genre) => {
-                        return (
-                        <StyledShowsGenre key={genre.id} >
-                            {genre.genre}
-                        </StyledShowsGenre>
-                        )
-                    })}
+                        <StyledShowsGenre onClick={() => filterGenre('Comedy')}>Comedy</StyledShowsGenre>
+                        <StyledShowsGenre onClick={() => filterGenre('Documentries')}>Documentries</StyledShowsGenre>
+                        <StyledShowsGenre onClick={() => filterGenre('Entertainment')}>Entertainment</StyledShowsGenre>
+                        <StyledShowsGenre onClick={() => filterGenre('Film')}>Film</StyledShowsGenre>
+                        <StyledShowsGenre onClick={() => filterGenre('Lifestyle')}>Lifestyle</StyledShowsGenre>
+                        <StyledShowsGenre onClick={() => filterGenre('News & Current Affairs')}>News & Current Affairs</StyledShowsGenre>
+                        <StyledShowsGenre onClick={() => filterGenre('Sports')}>Sports</StyledShowsGenre>
+                        <StyledShowsGenre onClick={() => filterGenre('World Drama')}>World Drama</StyledShowsGenre>
+                        <StyledShowsGenre onClick={() => filterGenre('On Tv: Yesterday')}>On Tv: Yesterday</StyledShowsGenre>
+                        <StyledShowsGenre onClick={() => filterGenre('On Tv: Last 7 Days')}>On Tv: Last 7 Days</StyledShowsGenre>
+                        <StyledShowsGenre onClick={() => filterGenre('Box Sets')}>Box Sets</StyledShowsGenre>
                     <StyledShowsMoreBox>
                         More...
                     </StyledShowsMoreBox>

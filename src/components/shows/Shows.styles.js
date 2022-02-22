@@ -39,6 +39,7 @@ const StyledShowCount = styled.p`
 const StyledShowsTitle = styled.h1`
     font-size: 46px;
     font-weight: 900;
+    padding-left: 5px;
     color: white;
     font-family: 'Source Sans Pro', sans-serif;
     @media (max-width:500px) {
@@ -173,11 +174,6 @@ const StyledShowsCardOverlay = styled.div`
     }
      
 `
-const StyledShowsCardOverlayText = styled.div`
-    color: white;
-    
-    
-`
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
     StyledShowsContainer,
@@ -194,5 +190,4 @@ export default {
     StyledShows,
     StyledShowsCard,
     StyledShowsCardOverlay,
-    StyledShowsCardOverlayText,
 }

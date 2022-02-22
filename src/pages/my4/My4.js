@@ -4,7 +4,11 @@ import { useSelector } from 'react-redux'
 
 const {
     StyledPageContainer,
-    StyledPageHeading
+    StyledPageHeading,
+    StyledMy4Nav,
+    StyledMy4NavWrapper,
+    StyledMy4Links,
+    StyledMy4AccountSettings
 } = PagesStyles
 
 const My4 = () => {
@@ -12,7 +16,20 @@ const My4 = () => {
     console.log(shows)
     return (
         <StyledPageContainer>
-            <StyledPageHeading>Page not finished :(</StyledPageHeading>
+            <StyledMy4Nav>
+                <StyledMy4NavWrapper>
+                    <h1>My4</h1>
+                    <StyledMy4Links>
+                        <div>Watching</div>
+                        <div>My List</div>
+                        <div>History</div>
+                    </StyledMy4Links>
+                    <StyledMy4AccountSettings>
+                        Account Settings
+                    </StyledMy4AccountSettings>
+                </StyledMy4NavWrapper>
+            </StyledMy4Nav>
+
             <p>{shows.map((show) => show.name)}</p>
         </StyledPageContainer>
     )
