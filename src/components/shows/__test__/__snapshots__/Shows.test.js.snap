@@ -1,0 +1,329 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the shows data 1`] = `
+<div
+  className="sc-bdvvtL gKTgDN"
+>
+  <div
+    className="sc-gsDKAQ hzWZun"
+  >
+    <div
+      className="sc-dkPtRN VKXyE"
+    >
+      <div
+        className="sc-hKwDye ebdpdx"
+      >
+        <h1
+          className="sc-jRQBWg isoPMB"
+        >
+          All Shows
+        </h1>
+        <p
+          className="sc-eCImPb hUVamz"
+        >
+          (
+           shows)
+        </p>
+      </div>
+      <div
+        className="sc-gKclnd gspfhA"
+      >
+        Refine: Popular
+        <div
+          className="sc-iCfMLu kLEZTn"
+        >
+          <svg
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": undefined,
+              }
+            }
+            viewBox="0 0 512 512"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M256 294.1L383 167c9.4-9.4 24.6-9.4 33.9 0s9.3 24.6 0 34L273 345c-9.1 9.1-23.7 9.3-33.1.7L95 201.1c-4.7-4.7-7-10.9-7-17s2.3-12.3 7-17c9.4-9.4 24.6-9.4 33.9 0l127.1 127z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div
+      className="sc-furwcr lcJmFS"
+    >
+      <div
+        className="sc-pVTFL dFQlVp"
+        onClick={[Function]}
+      >
+        Comedy
+      </div>
+      <div
+        className="sc-pVTFL dFQlVp"
+        onClick={[Function]}
+      >
+        Documentries
+      </div>
+      <div
+        className="sc-pVTFL dFQlVp"
+        onClick={[Function]}
+      >
+        Entertainment
+      </div>
+      <div
+        className="sc-pVTFL dFQlVp"
+        onClick={[Function]}
+      >
+        Film
+      </div>
+      <div
+        className="sc-pVTFL dFQlVp"
+        onClick={[Function]}
+      >
+        Lifestyle
+      </div>
+      <div
+        className="sc-pVTFL dFQlVp"
+        onClick={[Function]}
+      >
+        News & Current Affairs
+      </div>
+      <div
+        className="sc-pVTFL dFQlVp"
+        onClick={[Function]}
+      >
+        Sports
+      </div>
+      <div
+        className="sc-pVTFL dFQlVp"
+        onClick={[Function]}
+      >
+        World Drama
+      </div>
+      <div
+        className="sc-pVTFL dFQlVp"
+        onClick={[Function]}
+      >
+        On Tv: Yesterday
+      </div>
+      <div
+        className="sc-pVTFL dFQlVp"
+        onClick={[Function]}
+      >
+        On Tv: Last 7 Days
+      </div>
+      <div
+        className="sc-pVTFL dFQlVp"
+        onClick={[Function]}
+      >
+        Box Sets
+      </div>
+      <div
+        className="sc-jrQzAO hqnedw"
+      >
+        More...
+      </div>
+    </div>
+    <div
+      className="sc-kDTinF iOqFMu"
+    >
+      <div
+        className="sc-iqseJM itDdmz"
+        onClick={[Function]}
+      >
+        <div
+          className="sc-crHmcD XkmdP"
+        >
+          <img
+            alt="show"
+            src="/images/gogglebox.jpeg"
+          />
+        </div>
+        <p>
+          Gogglebox
+        </p>
+      </div>
+      <div
+        className="sc-iqseJM itDdmz"
+        onClick={[Function]}
+      >
+        <div
+          className="sc-crHmcD XkmdP"
+        >
+          <img
+            alt="show"
+            src="/images/hollyoaks.jpeg"
+          />
+        </div>
+        <p>
+          Hollyoaks
+        </p>
+      </div>
+      <div
+        className="sc-iqseJM itDdmz"
+        onClick={[Function]}
+      >
+        <div
+          className="sc-crHmcD XkmdP"
+        >
+          <img
+            alt="show"
+            src="/images/made_in_chelsea.jpeg"
+          />
+        </div>
+        <p>
+          Made in chelsea
+        </p>
+      </div>
+      <div
+        className="sc-iqseJM itDdmz"
+        onClick={[Function]}
+      >
+        <div
+          className="sc-crHmcD XkmdP"
+        >
+          <img
+            alt="show"
+            src="/images/married_at_first_sight.jpeg"
+          />
+        </div>
+        <p>
+          Married at first sight
+        </p>
+      </div>
+      <div
+        className="sc-iqseJM itDdmz"
+        onClick={[Function]}
+      >
+        <div
+          className="sc-crHmcD XkmdP"
+        >
+          <img
+            alt="show"
+            src="/images/fraiser.jpeg"
+          />
+        </div>
+        <p>
+          Fraiser
+        </p>
+      </div>
+      <div
+        className="sc-iqseJM itDdmz"
+        onClick={[Function]}
+      >
+        <div
+          className="sc-crHmcD XkmdP"
+        >
+          <img
+            alt="show"
+            src="/images/close_to_me.jpeg"
+          />
+        </div>
+        <p>
+          Close to Me
+        </p>
+      </div>
+      <div
+        className="sc-iqseJM itDdmz"
+        onClick={[Function]}
+      >
+        <div
+          className="sc-crHmcD XkmdP"
+        >
+          <img
+            alt="show"
+            src="/images/young_sheldon.jpeg"
+          />
+        </div>
+        <p>
+          Young Sheldon
+        </p>
+      </div>
+      <div
+        className="sc-iqseJM itDdmz"
+        onClick={[Function]}
+      >
+        <div
+          className="sc-crHmcD XkmdP"
+        >
+          <img
+            alt="show"
+            src="/images/the_inbetweeners.jpeg"
+          />
+        </div>
+        <p>
+          The Inbetweeners
+        </p>
+      </div>
+      <div
+        className="sc-iqseJM itDdmz"
+        onClick={[Function]}
+      >
+        <div
+          className="sc-crHmcD XkmdP"
+        >
+          <img
+            alt="show"
+            src="/images/friday_night_dinner.jpeg"
+          />
+        </div>
+        <p>
+          Friday Night Dinner
+        </p>
+      </div>
+      <div
+        className="sc-iqseJM itDdmz"
+        onClick={[Function]}
+      >
+        <div
+          className="sc-crHmcD XkmdP"
+        >
+          <img
+            alt="show"
+            src="/images/escape_to_chateau.jpeg"
+          />
+        </div>
+        <p>
+          Escape to the Chateau
+        </p>
+      </div>
+      <div
+        className="sc-iqseJM itDdmz"
+        onClick={[Function]}
+      >
+        <div
+          className="sc-crHmcD XkmdP"
+        >
+          <img
+            alt="show"
+            src="/images/formula_1.jpeg"
+          />
+        </div>
+        <p>
+          Formula 1
+        </p>
+      </div>
+      <div
+        className="sc-iqseJM itDdmz"
+        onClick={[Function]}
+      >
+        <div
+          className="sc-crHmcD XkmdP"
+        >
+          <img
+            alt="show"
+            src="/images/one_tree_hill.jpeg"
+          />
+        </div>
+        <p>
+          One Tree Hill
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;

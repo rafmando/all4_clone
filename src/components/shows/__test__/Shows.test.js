@@ -1,15 +1,12 @@
-// categoryegory 1 : Comedy
-// categoryegory 2 : Documentry
-// categoryegory 3 : Drama
-// categoryegory 4 : Entertainment
-// categoryegory 5 : Film
-// categoryegory 6 : Lifestyle
-// categoryegory 7 : News & Current affairs
-// categoryegory 8 : Sports
+import { fireEvent, render } from '@testing-library/react';
+import Shows from '../Shows'
+import renderer from 'react-test-renderer'
+import { store } from '../../../redux/store'
+import { Provider } from 'react-redux'
 
+let getByTestId;
 
-
-const showsData = [
+const mockShowsData = [
     {id:1, category:'Comedy', name:'Gogglebox', description:"What do Britain's sharpest armchair critics think of our biggest and best TV programmes",img:'/images/gogglebox.jpeg'},
     {id:2, category:'Drama', name:'Hollyoaks', description:"Hollyoaks: the village in Chester where it all happens",img:'/images/hollyoaks.jpeg'},
     {id:3, category:'Entertainment', name:'Made in chelsea', description:"Reality series following the lives, loves and awks of SW3's bright young things",img:'/images/made_in_chelsea.jpeg'},
@@ -22,10 +19,19 @@ const showsData = [
     {id:10, category:'Lifestyle', name:'Escape to the Chateau', description:"Can Dick Strawbridge and his wife Angel bring an abandoned French chateau back to life?",img:'/images/escape_to_chateau.jpeg'},
     {id:11, category:'Sports', name:'Formula 1', description:"Welcome to F1 2021. This twisting, turning season is nearing a nail-biting climax, with Max Verstappen and Lewis Hamilton neck and neck. Thrills are guaranteed.",img:'/images/formula_1.jpeg'},
     {id:12, category:'Lifestyle', name:'One Tree Hill', description:"Love, life and basketball in Tree Hill, a small town in North Carolina that sees far more than its fair share of teen drama",img:'/images/one_tree_hill.jpeg'},
-    {id:13, category:'Lifestyle', name:"The Great Pottery Throw Down",description:"Twelve of Britain's best home potters compete to be crowned best at the wheel",img:'/images/the_great_pottery_throw_down.jpeg'},
-    {id:14, category:'Entertainment', name:"Celebrity Hunted",description:"Can Celebrities survive 14 days on the run from the huters for Stand Up To Cancer?",img:'/images/celebrity_hunted.jpeg'},
-    {id:15, category:'Documentry', name:"Moors Murders",description:"The dark story of Britain's most infamous child murders, with never-before-seen letters",img:'/images/moors_murders.jpeg'},
-    {id:16, category:'Documentry', name:"60 Days with the Gypsies",description:"Explore Ed Stafford reveals the challenges of living in Gypsy and Traveller communities",img:'/images/60_days_with_the_gypsies.jpeg'},
 ]
 
-export default showsData
+
+it("renders the shows data", () => {
+    const tree = renderer.create(
+        <Provider store={store}>
+             <Shows data={mockShowsData}/>
+        </Provider>
+    ).toJSON();
+    expect(tree).toMatchSnapshot();
+})
+
+it("returns a show when filter button clicked ", () => {
+    const filterGenreButton = getByTestId('filter-genre')
+    expect(filterGenreButton.textContent).toBe('Comedy')
+})

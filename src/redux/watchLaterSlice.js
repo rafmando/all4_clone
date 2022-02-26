@@ -15,9 +15,6 @@ const watchLaterSlice = createSlice({
                 img: action.payload.img,
                 description: action.payload.description,
             }
-
-            const quantity = action.payload.name.split
-            console.log(quantity)
             state.watchLater.push(show)
             
             

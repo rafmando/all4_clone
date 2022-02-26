@@ -20,6 +20,8 @@ const {
     StyledShowsMoreBox,
     StyledShows,
     StyledShowsCard,
+    StyedShowsImageContainer,
+    StyledShowsCardImg,
     StyledShowsCardOverlay,
 } = ShowsStyles
 
@@ -29,14 +31,11 @@ const Shows = () => {
     const [shows,setShows] = useState(showsData)
     const dispatch = useDispatch()
    
-
-    
     useEffect(() => {
         updateShowTotal()
         
     });
 
-    
     const handleToWatchLater = (show) => {
         dispatch(addToWatchLater(show))
     }
@@ -55,9 +54,6 @@ const Shows = () => {
        
     }
 
-
-   
-    
     return (
         <StyledShowsContainer>
             <StyledShowsWrapper>
@@ -74,17 +70,17 @@ const Shows = () => {
                     </StyledShowsRefine>
                 </StyledShowsHeader>
                 <StyledShowsGenresWrapper>
-                        <StyledShowsGenre onClick={() => filterGenre('Comedy')}>Comedy</StyledShowsGenre>
-                        <StyledShowsGenre onClick={() => filterGenre('Documentries')}>Documentries</StyledShowsGenre>
-                        <StyledShowsGenre onClick={() => filterGenre('Entertainment')}>Entertainment</StyledShowsGenre>
-                        <StyledShowsGenre onClick={() => filterGenre('Film')}>Film</StyledShowsGenre>
-                        <StyledShowsGenre onClick={() => filterGenre('Lifestyle')}>Lifestyle</StyledShowsGenre>
-                        <StyledShowsGenre onClick={() => filterGenre('News & Current Affairs')}>News & Current Affairs</StyledShowsGenre>
-                        <StyledShowsGenre onClick={() => filterGenre('Sports')}>Sports</StyledShowsGenre>
-                        <StyledShowsGenre onClick={() => filterGenre('World Drama')}>World Drama</StyledShowsGenre>
-                        <StyledShowsGenre onClick={() => filterGenre('On Tv: Yesterday')}>On Tv: Yesterday</StyledShowsGenre>
-                        <StyledShowsGenre onClick={() => filterGenre('On Tv: Last 7 Days')}>On Tv: Last 7 Days</StyledShowsGenre>
-                        <StyledShowsGenre onClick={() => filterGenre('Box Sets')}>Box Sets</StyledShowsGenre>
+                        <StyledShowsGenre data-testid="filter-genre" onClick={() => filterGenre('Comedy')}>Comedy</StyledShowsGenre>
+                        <StyledShowsGenre data-testid="filter-genre" onClick={() => filterGenre('Documentry')}>Documentries</StyledShowsGenre>
+                        <StyledShowsGenre data-testid="filter-genre" onClick={() => filterGenre('Entertainment')}>Entertainment</StyledShowsGenre>
+                        <StyledShowsGenre data-testid="filter-genre" onClick={() => filterGenre('Film')}>Film</StyledShowsGenre>
+                        <StyledShowsGenre data-testid="filter-genre" onClick={() => filterGenre('Lifestyle')}>Lifestyle</StyledShowsGenre>
+                        <StyledShowsGenre data-testid="filter-genre" onClick={() => filterGenre('News & Current Affairs')}>News & Current Affairs</StyledShowsGenre>
+                        <StyledShowsGenre data-testid="filter-genre" onClick={() => filterGenre('Sports')}>Sports</StyledShowsGenre>
+                        <StyledShowsGenre data-testid="filter-genre" onClick={() => filterGenre('World Drama')}>World Drama</StyledShowsGenre>
+                        <StyledShowsGenre data-testid="filter-genre" onClick={() => filterGenre('On Tv: Yesterday')}>On Tv: Yesterday</StyledShowsGenre>
+                        <StyledShowsGenre data-testid="filter-genre" onClick={() => filterGenre('On Tv: Last 7 Days')}>On Tv: Last 7 Days</StyledShowsGenre>
+                        <StyledShowsGenre data-testid="filter-genre" onClick={() => filterGenre('Box Sets')}>Box Sets</StyledShowsGenre>
                     <StyledShowsMoreBox>
                         More...
                     </StyledShowsMoreBox>
@@ -93,9 +89,11 @@ const Shows = () => {
                     {shows.map((show)=> {
                         return (
                             <StyledShowsCard onClick={() => handleToWatchLater(show)} key={show.id}>
-                                <StyledShowsCardOverlay>
-                                    <img src={show.img} alt="show"/>
-                                </StyledShowsCardOverlay>
+                                    <StyledShowsCardOverlay>
+                                    <StyedShowsImageContainer>
+                                            <StyledShowsCardImg src={show.img} alt="show"/>
+                                    </StyedShowsImageContainer>
+                                    </StyledShowsCardOverlay>
                                 <p>{show.name}</p>
                             </StyledShowsCard>
                         )

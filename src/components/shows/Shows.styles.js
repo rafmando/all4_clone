@@ -5,6 +5,7 @@ const StyledShowsContainer = styled.div`
 `
 const StyledShowsWrapper = styled.div`
     max-width: 1160px;
+    min-height: 800px;
     margin: auto;
     padding-left: 30px;
     padding-right: 30px;
@@ -121,6 +122,10 @@ const StyledShowsGenre = styled.div`
     height: 30px;
     background-color: #292929;
     font-family: 'Open Sans', sans-serif;
+    &:hover {
+        background-color: #333333;
+        
+    }
 `
 const StyledShowsMoreBox = styled.div`
     display: none;
@@ -150,29 +155,40 @@ const StyledShows = styled.div`
 `
 const StyledShowsCard = styled.div`
     width: 24%;
+    position: relative;
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     color: white;
     margin-bottom: 20px;
-    img {
-        width: 100%;
-        position: relative;
+    p {
+        margin-top: 9px;
     }
     @media (max-width:810px) {
         width: 49%;
     }
-   
-    
+      
 `
-const StyledShowsCardOverlay = styled.div`
+const StyedShowsImageContainer = styled.div`
+    height: 30%;
+    overflow: hidden;
     position: relative;
-    z-index:2;
+
+`
+const StyledShowsCardImg = styled.img`
+    object-fit: cover;
     width: 100%;
+    height: 100%;
+    display: block;
+    transition:all 0.25s ease;
     &:hover {
-        background-color: black;
-        
+        transform: scale(1.1);
+
     }
-     
+`
+
+const StyledShowsCardOverlay = styled.div`
+    width: 100%;
+    background-color: black;  
 `
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
@@ -189,5 +205,7 @@ export default {
     StyledShowsMoreBox,
     StyledShows,
     StyledShowsCard,
+    StyedShowsImageContainer,
+    StyledShowsCardImg,
     StyledShowsCardOverlay,
 }

@@ -19,13 +19,26 @@ const {
     StyledNavbarIconMobile,
     StyledNavbarIconMobileText,
     StyledLink,
+    StyledNavbarDropDownSection,
     StyledNavbarDropDown,
     StyledNavbarDropDownItem,
+    StyledNavbarMenu,
+    StyledNavbarSearch,
+    StyledNavbarMy4,
 } = NavbarStyles
 
 const Navbar = () => {
 
     const [links] = useState(navbarData)
+    const [click, setClick] = useState(false)
+
+    const handleClick = () => {
+       setClick(!click)    
+    }
+
+    const handleDropDown = () => {
+        setClick(false)
+    }
 
     return (
         <>
@@ -47,42 +60,51 @@ const Navbar = () => {
                         })}
                     </StyledNavbarListItems>
                     <StyledNavbarWatchAndSearch>
-                        <StyledNavbarWSItem>
-                            <StyledNavbarIconMobile>
-                            <AiOutlineUser style={{width:"22px",height:"22px"}}/>
-                                <StyledNavbarIconMobileText to="/my4">My4</StyledNavbarIconMobileText>
-                            </StyledNavbarIconMobile>
-                        </StyledNavbarWSItem>
+                        <StyledNavbarMy4 to='/my4'>
+                            <StyledNavbarWSItem>
+                                <StyledNavbarIconMobile>
+                                <AiOutlineUser style={{width:"22px",height:"22px"}}/>
+                                    <StyledNavbarIconMobileText>My4</StyledNavbarIconMobileText>
+                                </StyledNavbarIconMobile>
+                            </StyledNavbarWSItem>
+                        </StyledNavbarMy4>
                         <StyledNavbarWSItem>
                             <StyledNavbarIcon>
                                     <MdLockOpen style={{width:"22px",height:"22px"}}/>
                             </StyledNavbarIcon>
                             <span>Parent Controls: </span><p>Off</p>
-                            <StyledNavbarIconMobile>
-                                <IoIosSearch style={{width:"22px",height:"22px"}}/>
-                                <StyledNavbarIconMobileText>Search</StyledNavbarIconMobileText>
-                            </StyledNavbarIconMobile>
+                            <StyledNavbarSearch>
+                                <StyledNavbarIconMobile>
+                                    <IoIosSearch style={{width:"22px",height:"22px"}}/>
+                                    <StyledNavbarIconMobileText>Search</StyledNavbarIconMobileText>
+                                </StyledNavbarIconMobile>
+                            </StyledNavbarSearch>
                         </StyledNavbarWSItem>
                         <StyledNavbarWSItem>
                             <StyledNavbarIcon>
                                 <IoIosSearch style={{width:"22px",height:"22px"}}/>
                             </StyledNavbarIcon>
                             <span>Search</span>
-                            <StyledNavbarIconMobile>
-                            <MdMenu style={{width:"22px",height:"22px"}}/>
-                                <StyledNavbarIconMobileText>Menu</StyledNavbarIconMobileText>
-                            </StyledNavbarIconMobile>
+                            <StyledNavbarMenu onClick={handleClick} click={click}>
+                                <StyledNavbarIconMobile>
+                                    <MdMenu style={{width:"22px",height:"22px"}}/>
+                                    <StyledNavbarIconMobileText>Menu</StyledNavbarIconMobileText>
+                                </StyledNavbarIconMobile>
+                            </StyledNavbarMenu>
                         </StyledNavbarWSItem>
                     </StyledNavbarWatchAndSearch>
                 </StyledNavbarWrapper>
             </StyledNavbar>
-            <StyledNavbarDropDown>
-                {links.map((link) => {
-                    return(
-                        <StyledNavbarDropDownItem key={link.id}>{link.link}</StyledNavbarDropDownItem>
-                    )
-                })}
-            </StyledNavbarDropDown>
+            
+            <StyledNavbarDropDownSection click={click}>
+                <StyledNavbarDropDown>
+                    {links.map((link) => {
+                        return(
+                            <StyledNavbarDropDownItem to={link.path} key={link.id} onClick={handleDropDown}>{link.link}</StyledNavbarDropDownItem>
+                        )
+                    })}
+                </StyledNavbarDropDown>
+            </StyledNavbarDropDownSection>
         </>
          
     )

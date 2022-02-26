@@ -124,33 +124,57 @@ const StyledNavbarIconMobile = styled.div`
 const StyledNavbarIconMobileText = styled.div`
     margin-top: 2px;
 `
-
+const StyledNavbarDropDownSection = styled.div`
+    display: flex;
+    justify-content: center;
+    display:${props => props.click ? "flex" : "none"}
+    
+`
 const StyledNavbarDropDown = styled.div`
    display: flex;
    flex-direction: column;
    position: absolute;
    background-color: white;
-   width: 100%;
+   width: 1160px;
    z-index: 1;
    font-weight: 400;
    font-family: 'Open Sans', sans-serif;
+   @media (max-width:1160px) {
+    width: 100%;
+    }
+    @media (min-width:720px) {
+        display: none;
+        
+    }
   
 `
-const StyledNavbarDropDownItem = styled.div`
+const StyledNavbarDropDownItem = styled(Link)`
+    text-decoration: none;
     height: 45px;
     padding-top: 10px;
     padding-left: 10px;
-    font-size: 16px;
+    font-size: 15px;
     color: white;
+    font-weight: bold;
     background-color: #333333;
     border-bottom: 0.3px solid #292929;
-    display: none;
+    display: flex;
     &:hover {
         background-color: #3e3e3e;
     }
-
     
 
+`
+const StyledNavbarMenu = styled.div`
+    cursor: pointer; 
+`
+const StyledNavbarSearch = styled.div`
+    cursor: pointer; 
+`
+const StyledNavbarMy4 = styled(Link)`
+    cursor: pointer; 
+    text-decoration: none;
+    color: #fff;
 `
 
 // eslint-disable-next-line import/no-anonymous-default-export
@@ -166,6 +190,10 @@ export default {
     StyledNavbarIconMobile,
     StyledNavbarIconMobileText,
     StyledLink,
+    StyledNavbarDropDownSection,
     StyledNavbarDropDown,
     StyledNavbarDropDownItem,
+    StyledNavbarMenu,
+    StyledNavbarSearch,
+    StyledNavbarMy4,
 }
