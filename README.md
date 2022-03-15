@@ -1,6 +1,6 @@
 # ALL4
 
-![GitHub Logo](../my-app/public/images/desktopView.png)
+<img src="public/images/desktopView.png">
 
 ### `Run all4_clone` 
 
