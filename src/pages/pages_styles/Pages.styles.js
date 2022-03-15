@@ -5,7 +5,8 @@ const StyledPageContainer = styled.div`
     height: 100vh;
     background-color: #1e1e1e;
     display: flex;
-    justify-content: center;
+    text-align: center;
+    flex-direction: column;
 
 
 `
@@ -14,6 +15,7 @@ const StyledPageHeading = styled.div`
     font-weight: 600;
     color: white;
     margin-top: 100px;
+    
     
 `
 ///My4 styles
@@ -41,8 +43,9 @@ const StyledMy4NavWrapper = styled.div`
         font-size: 30px;
     }
 `
+
 const StyledMy4Links = styled.div`
-    display: flex;
+    display: none;
     align-items: center;
     gap: 20px;
     width: 300px;
@@ -65,6 +68,52 @@ const StyledMy4AccountSettings = styled.div`
     justify-content: center;
 `
 
+const StyledShows = styled.div`
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 25px;
+    @media (max-width:810px) {
+        gap: 5px;
+        
+     }
+    
+ 
+`
+const StyledShowsCard = styled.div`
+    width: 24%;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+    p {
+        margin-top: 9px;
+    }
+    @media (max-width:810px) {
+        width: 49%;
+    }
+      
+`
+const StyedShowsImageContainer = styled.div`
+    height: 90%;
+    overflow: hidden;
+    position: relative;
+
+`
+const StyledShowsCardImg = styled.img`
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition:all 0.25s ease;
+    &:hover {
+        transform: scale(1.1);
+
+    }
+`
 
 export default{
     StyledPageContainer,
@@ -74,5 +123,9 @@ export default{
     StyledMy4NavWrapper,
     StyledMy4Links,
     StyledMy4AccountSettings,
+    StyledShows,
+    StyledShowsCard,
+    StyedShowsImageContainer,
+    StyledShowsCardImg,
 
 }

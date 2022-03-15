@@ -8,11 +8,16 @@ const {
     StyledMy4Nav,
     StyledMy4NavWrapper,
     StyledMy4Links,
-    StyledMy4AccountSettings
+    StyledMy4AccountSettings,
+    StyledShows,
+    StyledShowsCard,
+    StyedShowsImageContainer,
+    StyledShowsCardImg,
 } = PagesStyles
 
 const My4 = () => {
     const shows = useSelector((state) => state.watchLaterReducer.watchLater)
+   
     console.log(shows)
     return (
         <StyledPageContainer>
@@ -29,8 +34,19 @@ const My4 = () => {
                     </StyledMy4AccountSettings>
                 </StyledMy4NavWrapper>
             </StyledMy4Nav>
-
-            <p>{shows.map((show) => show.name)}</p>
+            <StyledShows>
+                    {shows.map((show)=> {
+                        return (
+                            <StyledShowsCard  key={show.id}>
+                                    <StyedShowsImageContainer>
+                                            <StyledShowsCardImg src={show.img} alt="show"/>
+                                    </StyedShowsImageContainer>
+                                <p>{show.name}</p>
+                            </StyledShowsCard>
+                        )
+                        
+                    })}
+                </StyledShows>
         </StyledPageContainer>
     )
 }

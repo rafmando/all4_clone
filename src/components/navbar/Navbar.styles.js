@@ -38,7 +38,7 @@ const StyledLink = styled(Link)`
     text-decoration: none;
     color: white;
 `
-const StyledNavbarLogo = styled.div`
+const StyledNavbarLogo = styled(Link)`
     
 
 `
@@ -125,7 +125,6 @@ const StyledNavbarIconMobileText = styled.div`
     margin-top: 2px;
 `
 const StyledNavbarDropDownSection = styled.div`
-    display: flex;
     justify-content: center;
     display:${props => props.click ? "flex" : "none"}
     

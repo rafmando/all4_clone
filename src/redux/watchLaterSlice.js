@@ -15,7 +15,10 @@ const watchLaterSlice = createSlice({
                 img: action.payload.img,
                 description: action.payload.description,
             }
+                
+           
             state.watchLater.push(show)
+            
             
             
         }
